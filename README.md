@@ -1,4 +1,4 @@
-Passos para rodar o projeto: 
+`` Passos para rodar o projeto: ``
 
  - Para configuração do projeto e ambiente.
 
@@ -24,9 +24,9 @@ docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb
 
     - Para remover um cpf d lista restrita    
         
-        DELETE localhost:3333/controlscpf/v1/controlscpfs/610.362.590-48
+      **DELETE** localhost:3333/controlscpf/v1/controlscpfs/610.362.590-48
     
-    - LIST localhost:3333/controlscpf/v1/controlscpfs 
+    - **LIST** localhost:3333/controlscpf/v1/controlscpfs 
         
         GET localhost:3333/controlscpf/v1/controlscpfs 
 
@@ -39,6 +39,10 @@ são instanciadas em um único arquivo chamado index.ts
 
 Apliquei também a inversão de dependências que diz que toda classe quando tiver dependências deve depender 
 de abstração ou interface.
+
+Banco de dados foi utilizado o MongoDB por ser mais leve e rápido, um banco não relacional.
+
+
 
 
 **Sobre o diagrama de UML, aconteceu mudanças, ainda não é a versão final**
