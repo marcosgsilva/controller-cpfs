@@ -31,7 +31,8 @@
       ** GET** localhost:3333/controlscpf/v1/controlscpfs 
 
 
-Neste projeto apliquei a arquitetura clean code, usando os domain: que são a camada de caso de uso, 
+Neste projeto apliquei a arquitetura clean code, que é uma arquitetura que tem como objetivo deixar, o código limpo,
+claro usando bons padrões como solid. A atuação maior que ocorre nessa arquitetura é no domain: que é a camada de caso de uso, 
 onde ocorre a interação com o usuário. Neste sentindo poderia ter escolhido MVC más é uma arquitetura
 onde conforme o tempo fica dificil a manuntenção do software, pois é dificil manter o padrão
 em uma equipe grande onde vários atuam no código. Apliquei também o padrão de dependency injection as classes
