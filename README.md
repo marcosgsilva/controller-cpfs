@@ -1,4 +1,3 @@
-![diagrama_classe_version_inicial png](https://user-images.githubusercontent.com/12539016/130900566-266d23ee-501d-4d5a-ae0b-c75afc8149a0.png)
 Passos para rodar o projeto: 
 
  - Para configuração do projeto e ambiente.
@@ -43,6 +42,9 @@ de abstração ou interface.
 
 
 Sobre o diagrama de UML, criei uma versão inicial, más aconteceu mudanças e não conseguir atualizá-lo
+
+![diagrama_classe_version_inicial png](https://user-images.githubusercontent.com/12539016/130900566-266d23ee-501d-4d5a-ae0b-c75afc8149a0.png)
+
 
 
 
