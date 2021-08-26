@@ -1,9 +1,17 @@
+import * as dotenv from 'dotenv'
 import express from 'express'
-const app = express()
+import { MongoHelper } from './infra/db/mongodb/mongo-helper'
+import { applyRoutes } from './routes'
+export const app = express()
 
-app.get('/', (request:any, response:any)=>{
-  console.log("TESTE")
-  return response.json()
-})
+dotenv.config()
+MongoHelper.connect(process.env.MONGO_URL)
+  .then(async () => {
+    const app = (await import('./app')).app
+    app.get('/', (request: any, response: any) => {
+      return response.json()
+    })
+  })
+applyRoutes(app)
 
 app.listen(3333)

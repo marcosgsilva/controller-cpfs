@@ -1,0 +1,6 @@
+{
+  "babel": {
+    "ts": true,
+    "plugins": ["@babel/plugin-transform-typescript"]
+  }
+}
