@@ -3,15 +3,15 @@
  - Para configuração do projeto e ambiente.
 
       1. rodar o comando abaixo, ele irá iniciar um container responsável por subir um banco mongoDB
-      docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb
+      **docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb**
 
-      2.  abrir um gerenciar de mongodb - exemplo MongoAtlas e após isso se conectar no Banco através do host 127.0.0.1:27017.
+      2.  abrir um gerenciar de mongodb - exemplo MongoAtlas e após isso se conectar no Banco através do host **127.0.0.1:27017.**
 
-      3. Criar um banco de dados chamado user
+      3. Criar um banco de dados chamado **user**
 
-      4. rodar o npm install para instalar as dependências.
+      4. rodar o **npm install** para instalar as dependências.
 
-      5. rodar o projeto usando o comando npm run server
+      5. rodar o projeto usando o comando **npm run server**
 
  - Para testar a aplicação, segue abaixo os endpoints, os testes foram feitos no insomnia:
 
