@@ -41,7 +41,7 @@ Apliquei também a inversão de dependências que diz que toda classe quando tiv
 de abstração ou interface.
 
 
-Sobre o diagrama de UML, aconteceu mudanças, ainda não é a versão final
+**Sobre o diagrama de UML, aconteceu mudanças, ainda não é a versão final**
 
 ![diagrama_classe_version_inicial png](https://user-images.githubusercontent.com/12539016/130900566-266d23ee-501d-4d5a-ae0b-c75afc8149a0.png)
 
