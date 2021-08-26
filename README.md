@@ -2,22 +2,22 @@
 
  - Para configuração do projeto e ambiente.
 
-1° rodar o comando abaixo, ele irá iniciar um container responsável por subir um banco mongoDB
-docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb
+      1. rodar o comando abaixo, ele irá iniciar um container responsável por subir um banco mongoDB
+      docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb
 
-2°  abrir um gerenciar de mongodb - exemplo MongoAtlas e após isso se conectar no Banco através do host 127.0.0.1:27017.
+      2.  abrir um gerenciar de mongodb - exemplo MongoAtlas e após isso se conectar no Banco através do host 127.0.0.1:27017.
 
-3° Criar um banco de dados chamado user
+      3. Criar um banco de dados chamado user
 
-4° rodar o npm install para instalar as dependências.
+      4. rodar o npm install para instalar as dependências.
 
-5° rodar o projeto usando o comando npm run server
+      5. rodar o projeto usando o comando npm run server
 
  - Para testar a aplicação, segue abaixo os endpoints, os testes foram feitos no insomnia:
 
     - Para adicionar um cpf na lista restrita 
         
-        POST localhost:3333/controlscpf/v1/controlscpfs 
+      **POST** localhost:3333/controlscpf/v1/controlscpfs 
           {
             cpf: '610.362.590-48'
           }
@@ -28,7 +28,7 @@ docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb
     
     - **LIST** localhost:3333/controlscpf/v1/controlscpfs 
         
-        GET localhost:3333/controlscpf/v1/controlscpfs 
+      ** GET** localhost:3333/controlscpf/v1/controlscpfs 
 
 
 Neste projeto apliquei a arquitetura clean code, usando os domain: que são a camada de caso de uso, 
