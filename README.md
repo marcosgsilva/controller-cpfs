@@ -60,8 +60,8 @@ Como é um projeto que venho desenvolvendo  no intuito de aprender as tecnologia
 O que é RabbitMQ?
 
 É um servidor de mensageria Opensource, capaz de suportar o protocolo amqp(Advanced Messages Queuing Protocol), é uma solução que vêm sendo adotada no mercado na comunicação de microserviços,  abaixo enumero que essa tecnologia nos oferece: 
-1. é uma solução que é compativel com várias linguagens.
-2. garante a assicronicidade entre as aplicações
+1. É uma solução que é compativel com várias linguagens.
+2. Garante a assicronicidade entre as aplicações
 3. Lida com o tráfego dos dados de forma rápida e confiável. 
 4. Controla fila em Background
 5. Umas das vantagens com processamento pesado, dependendo da linguagem, a exemplo no Node que é single thread  e uma determinada thread tem que ser finalizada para que aplicação não fique travada esperando o processo ser finalizado, mesmo usando callbacks podem ocorrer falhas no processamento e perda de dados, como timeout e outros...
