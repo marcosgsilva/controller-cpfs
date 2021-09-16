@@ -6,7 +6,6 @@ export interface IStatus{
   status: number,
   message: string,
   type: string,
-
   createdAt?: string,
   cpf?: string
 }

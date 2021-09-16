@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response, Router } from 'express'
 import { makeControlsCpfsCreateController, makeControlsCpfsListController, makeConttrolsCpfsDeleteController } from '../domain/usecases/controls-cpfs'
+import RabbitmqServer from '../infra/rabbitmq/index'
 
 export const controlsCpfRouter = Router()
 
@@ -19,6 +20,10 @@ controlsCpfRouter
 controlsCpfRouter
   .route('/controlscpf/v1/controlscpfs')
   .post(async (req: Request, res: Response, next: NextFunction) => {
+    const server = new RabbitmqServer('amqp://guest:1234@localhost')
+    await server.start()
+    await server.publishInQueue('nest', JSON.stringify(req.query))
+    await server.publishInExchange('amq.direct', 'rota', JSON.stringify(req.query))
     const controlsCpfRouter = makeControlsCpfsCreateController()
     return controlsCpfRouter.handle({ req, res })
   })
