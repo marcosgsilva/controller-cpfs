@@ -52,6 +52,39 @@ Banco de dados foi utilizado o MongoDB por ser mais leve e rápido, um banco nã
 
 
 
+Como é um projeto que venho desenvolvendo  no intuito de aprender as tecnologias atuais de Mercado, estarei explicando sobre o que venho aprendendo: Rab
+
+
+**RabbitMQ**
+
+O que é RabbitMQ?
+
+É um servidor de mensageria Opensource, capaz de suportar o protocolo amqp(Advanced Messages Queuing Protocol), é uma solução que vêm sendo adotada no mercado na comunicação de microserviços,  abaixo enumero que essa tecnologia nos oferece: 
+1. é uma solução que é compativel com várias linguagens.
+2. garante a assicronicidade entre as aplicações
+3. Lida com o tráfego dos dados de forma rápida e confiável. 
+4. Controla fila em Background
+5. Umas das vantagens com processamento pesado, dependendo da linguagem, a exemplo no Node que é single thread  e uma determinada thread tem que ser finalizada para que aplicação não fique travada esperando o processo ser finalizado, mesmo usando callbacks podem ocorrer falhas no processamento e perda de dados, como timeout e outros...
+
+Alguns Conceitos que são importantes: 
+
+1. Fila: Onde as mensagens ficam e serão retiradas pelo Consumer.
+2. Publisher: É responsável por adicionar uma mensagem na fila.
+3. Consumer: É responsável por retirar uma mensagem da fila.
+
+Instalação 
+Para instalação podem seguir esse artigo interessante que mostra mostra como usar o rabbitmq usando docker, além de mudar a senha do serviço.
+http://blog.aeciopires.com/instalando-o-rabbitmq-via-docker/
+
+
+Nessa aplicação , foi criado a configuração usando o RabbitMQ apenas criando o channel e publicando na fila. O código se encontra no diretório infra.
+
+
+
+
+
+
+
 
 
 
