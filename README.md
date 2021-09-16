@@ -1,6 +1,7 @@
 <h3>Objetivo</h3>
 
-Esse Projeto tem como objetivo inicial colocar em prática tudo que venho apredendo ultimamente, compartilhar também de forma a contribuir para que outras pessoas possam aprender também
+Esse Projeto tem como objetivo inicial colocar em prática tudo que venho apredendo ultimamente, compartilhar também de forma a contribuir para que outras pessoas possam aprender também.
+
 `` Tenologias empregadas para o desenvolvimento do Projeto: ``
 - Node com Typescript
 - mongoDB
