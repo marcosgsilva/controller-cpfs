@@ -1,3 +1,8 @@
+<h3>Objetivo</h3>
+
+Esse Projeto tem como objetivo inicial colocar em prática tudo que venho apredendo ultimamente, compartilhar também de forma a contribuir para que outras pessoas possam aprender também
+
+
 `` Passos para rodar o projeto: ``
 
  - Para configuração do projeto e ambiente.
