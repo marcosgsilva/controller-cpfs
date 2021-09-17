@@ -1,7 +1,7 @@
 import { IStatus } from '../../domain/usecases/exceptions/CPFExceptions'
 import { IUser } from '../../domain/usecases/interfaces/IUser'
-import { MongoHelper } from '../db/mongodb/mongo-helper'
-import { IUserRepository } from './IUserRepository'
+import { MongoHelper } from '../helper/mongodb/mongo-helper'
+import { IUserRepository } from '../repository/IUserRepository'
 
 export class UserRepository implements IUserRepository {
   async remove(cpf: string): Promise<IStatus> {

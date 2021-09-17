@@ -1,4 +1,4 @@
-import { IUserRepository } from '../../../infra/data/IUserRepository'
+import { IUserRepository } from '../../../infrastructure/repository/IUserRepository'
 import { ValidateCpf } from '../../../utils/validate-cpf'
 import { ICPFExceptions } from '../interfaces/ICPFException'
 

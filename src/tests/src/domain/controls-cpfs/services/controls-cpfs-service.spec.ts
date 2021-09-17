@@ -1,5 +1,5 @@
 import { ControlsCpfsService } from '../../../../../domain/usecases/controls-cpfs/controls-cpfs-service'
-import { UserRepository } from '../../../../../infra/data/UserRepository'
+import { UserRepository } from '../../../../../infrastructure/repository/UserRepository'
 
 const userRepository: jest.Mocked<UserRepository> = {
   findAll: jest.fn(),

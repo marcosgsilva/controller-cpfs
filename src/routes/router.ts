@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response, Router } from 'express'
 import { makeControlsCpfsCreateController, makeControlsCpfsListController, makeConttrolsCpfsDeleteController } from '../domain/usecases/controls-cpfs'
-import RabbitmqServer from '../infra/rabbitmq/index'
+import RabbitmqServer from '../infrastructure/rabbitmq/index'
 
 export const controlsCpfRouter = Router()
 

@@ -1,5 +1,5 @@
-import { UserRepository } from '../../../infra/data/UserRepository'
-import logger from '../../../middlwares/logger'
+import { UserRepository } from '../../../infrastructure/repository/UserRepository'
+import logger from '../../../infrastructure/middlwares/logger'
 import { CPFExceptions } from '../exceptions/CPFExceptions'
 import { ControlsCpfsDeleteController } from './controls-cpfs-delete-controller'
 import { ControlsCpfsListController } from './controls-cpfs-list-controller'

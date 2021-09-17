@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc -p ./",
     "start": "node dist/server",
+    "watch": "tsc-watch --onSuccess",
     "dev": "tsc-watch --onSuccess \"npm start\"",
     "test": "jest",
     "test:ci": "npx jest --ci --runInBand --silent --colors --coverage"

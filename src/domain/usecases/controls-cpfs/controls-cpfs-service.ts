@@ -1,4 +1,4 @@
-import { IUserRepository } from '../../../infra/data/IUserRepository'
+import { IUserRepository } from '../../../infrastructure/repository/IUserRepository'
 import { IStatus } from '../exceptions/CPFExceptions'
 import { IUser } from '../interfaces/IUser'
 import { IUserService } from '../interfaces/IUserService'
