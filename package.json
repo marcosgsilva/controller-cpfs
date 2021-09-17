@@ -6,13 +6,16 @@
   "scripts": {
     "build": "tsc -p ./",
     "start": "node dist/server",
-    "dev": "tsc-watch --onSuccess \"npm start\""
+    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "test": "jest",
+    "test:ci": "npx jest --ci --runInBand --silent --colors --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.2",
+    "@types/jest": "^27.0.1",
     "@types/mongodb": "^4.0.7",
     "@types/node": "^16.4.13",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
@@ -25,8 +28,10 @@
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
+    "jest": "^27.2.0",
     "lint-staged": "^11.0.0",
     "quokka": "0.0.7",
+    "ts-jest": "^27.0.5",
     "ts-node": "^10.1.0",
     "ts-node-dev": "^1.1.8",
     "tsc-watch": "^4.5.0",
