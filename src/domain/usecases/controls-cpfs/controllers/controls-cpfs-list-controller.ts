@@ -1,5 +1,5 @@
-import { IController } from '../interfaces/IController'
-import { IUserService } from '../interfaces/IUserService'
+import { IController } from './implementation/IController'
+import { IUserService } from './implementation/IUserService'
 
 export class ControlsCpfsListController implements IController {
   constructor(private controlsCpfsService: IUserService) {

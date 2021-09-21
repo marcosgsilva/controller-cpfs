@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1631839886857" clover="3.2.0">
-  <project timestamp="1631839886857" name="All files">
-    <metrics statements="211" coveredstatements="7" conditionals="53" coveredconditionals="0" methods="53" coveredmethods="4" elements="317" coveredelements="11" complexity="0" loc="211" ncloc="211" packages="11" files="18" classes="18"/>
+<coverage generated="1632233339817" clover="3.2.0">
+  <project timestamp="1632233339817" name="All files">
+    <metrics statements="123" coveredstatements="0" conditionals="32" coveredconditionals="0" methods="30" coveredmethods="0" elements="185" coveredelements="0" complexity="0" loc="123" ncloc="123" packages="9" files="11" classes="11"/>
     <package name="src">
-      <metrics statements="18" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.ts" path="C:\projetos\controller-cpfs\src\app.ts">
         <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
@@ -13,116 +13,10 @@
         <line num="6" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
       </file>
-      <file name="server.ts" path="C:\projetos\controller-cpfs\src\server.ts">
-        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-      </file>
     </package>
-    <package name="src.domain.usecases.controls-cpfs">
-      <metrics statements="53" coveredstatements="7" conditionals="7" coveredconditionals="0" methods="13" coveredmethods="4"/>
-      <file name="controls-cpfs-delete-controller.ts" path="C:\projetos\controller-cpfs\src\domain\usecases\controls-cpfs\controls-cpfs-delete-controller.ts">
-        <metrics statements="9" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="19" count="0" type="stmt"/>
-      </file>
-      <file name="controls-cpfs-list-controller.ts" path="C:\projetos\controller-cpfs\src\domain\usecases\controls-cpfs\controls-cpfs-list-controller.ts">
-        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-      </file>
-      <file name="controls-cpfs-post-controller.ts" path="C:\projetos\controller-cpfs\src\domain\usecases\controls-cpfs\controls-cpfs-post-controller.ts">
-        <metrics statements="9" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="cond" truecount="0" falsecount="3"/>
-        <line num="18" count="0" type="stmt"/>
-      </file>
-      <file name="controls-cpfs-service.ts" path="C:\projetos\controller-cpfs\src\domain\usecases\controls-cpfs\controls-cpfs-service.ts">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\projetos\controller-cpfs\src\domain\usecases\controls-cpfs\index.ts">
-        <metrics statements="24" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.domain.usecases.exceptions">
-      <metrics statements="14" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="CPFExceptions.ts" path="C:\projetos\controller-cpfs\src\domain\usecases\exceptions\CPFExceptions.ts">
-        <metrics statements="14" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="40" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.domain.usecases.exceptions.abstracts">
+    <package name="src.domain.exceptions.abstracts">
       <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="AbstractException.ts" path="C:\projetos\controller-cpfs\src\domain\usecases\exceptions\abstracts\AbstractException.ts">
+      <file name="AbstractException.ts" path="C:\projetos\controller-cpfs\src\domain\exceptions\abstracts\AbstractException.ts">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -130,44 +24,17 @@
         <line num="11" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.domain.usecases.interfaces">
+    <package name="src.domain.interfaces">
       <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="C:\projetos\controller-cpfs\src\domain\usecases\interfaces\index.ts">
+      <file name="index.ts" path="C:\projetos\controller-cpfs\src\domain\interfaces\index.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.infra.data">
-      <metrics statements="21" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="5" coveredmethods="0"/>
-      <file name="UserRepository.ts" path="C:\projetos\controller-cpfs\src\infra\data\UserRepository.ts">
-        <metrics statements="21" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="18" count="0" type="cond" truecount="0" falsecount="6"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.infra.db.mongodb">
+    <package name="src.infrastructure.helper.mongodb">
       <metrics statements="12" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
-      <file name="mongo-helper.ts" path="C:\projetos\controller-cpfs\src\infra\db\mongodb\mongo-helper.ts">
+      <file name="mongo-helper.ts" path="C:\projetos\controller-cpfs\src\infrastructure\helper\mongodb\mongo-helper.ts">
         <metrics statements="12" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -183,9 +50,25 @@
         <line num="33" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.infra.rabbitmq">
+    <package name="src.infrastructure.middlwares">
       <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-      <file name="index.ts" path="C:\projetos\controller-cpfs\src\infra\rabbitmq\index.ts">
+      <file name="logger.ts" path="C:\projetos\controller-cpfs\src\infrastructure\middlwares\logger.ts">
+        <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.infrastructure.rabbitmq">
+      <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="index.ts" path="C:\projetos\controller-cpfs\src\infrastructure\rabbitmq\index.ts">
         <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
@@ -199,20 +82,22 @@
         <line num="29" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.middlwares">
-      <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-      <file name="logger.ts" path="C:\projetos\controller-cpfs\src\middlwares\logger.ts">
-        <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+    <package name="src.infrastructure.server">
+      <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="server.ts" path="C:\projetos\controller-cpfs\src\infrastructure\server\server.ts">
+        <metrics statements="12" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.routes">

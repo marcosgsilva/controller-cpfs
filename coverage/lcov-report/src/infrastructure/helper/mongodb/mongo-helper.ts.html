@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/domain/usecases/controls-cpfs/controls-cpfs-delete-controller.ts</title>
+    <title>Code coverage report for src/infrastructure/helper/mongodb/mongo-helper.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../../prettify.css" />
     <link rel="stylesheet" href="../../../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">src/domain/usecases/controls-cpfs</a> controls-cpfs-delete-controller.ts</h1>
+        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">src/infrastructure/helper/mongodb</a> mongo-helper.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>0/12</span>
             </div>
         
             
@@ -78,7 +78,31 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -92,32 +116,50 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { formatDocumentCpfCnpj } from '../../../utils/format-document'</span>
-import { IStatus } from '../exceptions/CPFExceptions'
-import { IController } from '../interfaces/IController'
-import { ICPFExceptions } from '../interfaces/ICPFException'
-import { IUserService } from '../interfaces/IUserService'
-<span class="cstat-no" title="statement not covered" >export class C</span>ontrolsCpfsDeleteController implements IController {
-<span class="fstat-no" title="function not covered" >  constructor(private <span class="cstat-no" title="statement not covered" >c</span>pfException: ICPFExceptions,</span> private <span class="cstat-no" title="statement not covered" >controlService: IUserService)</span> {
-  }
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { Collection, MongoClient } from 'mongodb'</span>
 &nbsp;
-<span class="fstat-no" title="function not covered" >  async </span>handle({ req, res }) {
-    const cpf = <span class="cstat-no" title="statement not covered" >formatDocumentCpfCnpj(req.query.cpf)</span>
-    const cpfException = <span class="cstat-no" title="statement not covered" >await this.cpfException.invalidException(cpf, res)</span>
-    let removeCpf
-<span class="cstat-no" title="statement not covered" >    if (!cpfException) {</span>
-<span class="cstat-no" title="statement not covered" >      removeCpf = await this.controlService.remove(cpf)</span>
+export const <span class="cstat-no" title="statement not covered" >MongoHelper = {</span>
+  client: null as MongoClient,
+  uri: null as string,
+&nbsp;
+<span class="fstat-no" title="function not covered" >  async </span>connect (uri: string): Promise&lt;void&gt; {
+<span class="cstat-no" title="statement not covered" >    this.uri = uri</span>
+<span class="cstat-no" title="statement not covered" >    this.client = await MongoClient.connect(uri, {</span>
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    })
+  },
+&nbsp;
+<span class="fstat-no" title="function not covered" >  async </span>disconnect (): Promise&lt;void&gt; {
+<span class="cstat-no" title="statement not covered" >    await this.client.close()</span>
+<span class="cstat-no" title="statement not covered" >    this.client = null</span>
+  },
+&nbsp;
+<span class="fstat-no" title="function not covered" >  async </span>getCollection (name: string): Promise&lt;Collection&gt; {
+<span class="cstat-no" title="statement not covered" >    if (!this.client?.isConnected()) {</span>
+<span class="cstat-no" title="statement not covered" >      await this.connect(this.uri)</span>
     }
-    const response: IStatus = <span class="cstat-no" title="statement not covered" >cpfException || removeCpf</span>
+<span class="cstat-no" title="statement not covered" >    return this.client.db().collection(name)</span>
+  },
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return res.status(response.status).json(response)</span>
+  map: <span class="fstat-no" title="function not covered" >(d</span>ata: any): any =&gt; {
+    const { _id, ...rest } = <span class="cstat-no" title="statement not covered" >data</span>
+<span class="cstat-no" title="statement not covered" >    return { ...rest, id: _id }</span>
+  },
+&nbsp;
+  mapCollection: <span class="fstat-no" title="function not covered" >(c</span>ollection: any[]): any[] =&gt; {
+<span class="cstat-no" title="statement not covered" >    return collection.map(<span class="fstat-no" title="function not covered" >c </span>=&gt; <span class="cstat-no" title="statement not covered" >MongoHelper.map(c))</span></span>
   }
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -127,7 +169,7 @@ import { IUserService } from '../interfaces/IUserService'
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Sep 21 2021 10:56:35 GMT-0300 (Horário Padrão de Brasília)
+                at Tue Sep 21 2021 11:08:59 GMT-0300 (Horário Padrão de Brasília)
             </div>
         </div>
         <script src="../../../../prettify.js"></script>

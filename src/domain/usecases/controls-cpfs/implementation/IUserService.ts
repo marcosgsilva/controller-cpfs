@@ -1,5 +1,5 @@
-import { IStatus } from '../exceptions/CPFExceptions'
-import { IUser } from './IUser'
+import { IStatus } from '../../../exceptions/CPFExceptions';
+import { IUser } from '../model/IUser';
 
 export interface IUserService{
   fetch(): Promise<IUser[]>,

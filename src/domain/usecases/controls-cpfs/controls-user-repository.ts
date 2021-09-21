@@ -1,9 +1,9 @@
-import { IStatus } from '../../domain/usecases/exceptions/CPFExceptions'
-import { IUser } from '../../domain/usecases/interfaces/IUser'
-import { MongoHelper } from '../helper/mongodb/mongo-helper'
-import { IUserRepository } from '../repository/IUserRepository'
+import { IStatus } from '../../../domain/exceptions/CPFExceptions'
+import { MongoHelper } from '../../../infrastructure/helper/mongodb/mongo-helper'
+import { IUserRepository } from './implementation/IUserRepository'
+import { IUser } from './model/IUser'
 
-export class UserRepository implements IUserRepository {
+export class ControlsUserRepository implements IUserRepository {
   async remove(cpf: string): Promise<IStatus> {
     const user = await MongoHelper.getCollection('user')
     user.drop({ cpf: cpf })

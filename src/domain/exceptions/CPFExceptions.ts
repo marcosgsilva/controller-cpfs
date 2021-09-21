@@ -1,6 +1,6 @@
-import { IUserRepository } from '../../../infrastructure/repository/IUserRepository'
-import { ValidateCpf } from '../../../utils/validate-cpf'
-import { ICPFExceptions } from '../interfaces/ICPFException'
+import { IUserRepository } from '../usecases/controls-cpfs/implementation/IUserRepository'
+import { ValidateCpf } from '../../utils/validate-cpf'
+import { ICPFExceptions } from './ICPFException'
 
 export interface IStatus{
   status: number,

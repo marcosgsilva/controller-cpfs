@@ -1,13 +1,13 @@
-import { formatDocumentCpfCnpj } from '../../../utils/format-document'
-import { IStatus } from '../exceptions/CPFExceptions'
-import { IController } from '../interfaces/IController'
-import { ICPFExceptions } from '../interfaces/ICPFException'
-import { IUserService } from '../interfaces/IUserService'
+import { formatDocumentCpfCnpj } from '../../../../utils/format-document'
+import { IStatus } from '../../../exceptions/CPFExceptions'
+import { IController } from '../implementation/IController'
+import { ICPFExceptions } from '../../../exceptions/ICPFException'
+import { IUserService } from '../implementation/IUserService'
 
 export class ControlsCpfsPostController implements IController {
-  constructor(private cpfException: ICPFExceptions, private controlsCpfService: IUserService) {
-
-  }
+  constructor(private cpfException: ICPFExceptions,
+                private controlsCpfService: IUserService) {
+              }
 
   async handle({ req, res }) {
     const formatCpf = formatDocumentCpfCnpj(req.query.cpf)

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/domain/usecases/controls-cpfs/controls-cpfs-delete-controller.ts</title>
+    <title>Code coverage report for src/domain/exceptions/abstracts/AbstractException.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../../prettify.css" />
     <link rel="stylesheet" href="../../../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">src/domain/usecases/controls-cpfs</a> controls-cpfs-delete-controller.ts</h1>
+        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">src/domain/exceptions/abstracts</a> AbstractException.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
@@ -70,54 +70,30 @@
 <a name='L11'></a><a href='#L11'>11</a>
 <a name='L12'></a><a href='#L12'>12</a>
 <a name='L13'></a><a href='#L13'>13</a>
-<a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a>
-<a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L14'></a><a href='#L14'>14</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { formatDocumentCpfCnpj } from '../../../utils/format-document'</span>
-import { IStatus } from '../exceptions/CPFExceptions'
-import { IController } from '../interfaces/IController'
-import { ICPFExceptions } from '../interfaces/ICPFException'
-import { IUserService } from '../interfaces/IUserService'
-<span class="cstat-no" title="statement not covered" >export class C</span>ontrolsCpfsDeleteController implements IController {
-<span class="fstat-no" title="function not covered" >  constructor(private <span class="cstat-no" title="statement not covered" >c</span>pfException: ICPFExceptions,</span> private <span class="cstat-no" title="statement not covered" >controlService: IUserService)</span> {
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >export abstract class A</span>bstractException {
+<span class="fstat-no" title="function not covered" >  invalidException(</span>cpf: string) {
+<span class="cstat-no" title="statement not covered" >    throw new Error('InvalidException')</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  async </span>handle({ req, res }) {
-    const cpf = <span class="cstat-no" title="statement not covered" >formatDocumentCpfCnpj(req.query.cpf)</span>
-    const cpfException = <span class="cstat-no" title="statement not covered" >await this.cpfException.invalidException(cpf, res)</span>
-    let removeCpf
-<span class="cstat-no" title="statement not covered" >    if (!cpfException) {</span>
-<span class="cstat-no" title="statement not covered" >      removeCpf = await this.controlService.remove(cpf)</span>
-    }
-    const response: IStatus = <span class="cstat-no" title="statement not covered" >cpfException || removeCpf</span>
+<span class="fstat-no" title="function not covered" >  existsCPFException(</span>res, lenght: number) {
+<span class="cstat-no" title="statement not covered" >    throw new Error('existsCPFException')</span>
+  }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return res.status(response.status).json(response)</span>
+<span class="fstat-no" title="function not covered" >  notFoundCPFException(</span>data: number) {
+<span class="cstat-no" title="statement not covered" >    throw new Error('notFoundCPFException')</span>
   }
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -127,7 +103,7 @@ import { IUserService } from '../interfaces/IUserService'
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Sep 21 2021 10:56:35 GMT-0300 (Horário Padrão de Brasília)
+                at Tue Sep 21 2021 11:08:59 GMT-0300 (Horário Padrão de Brasília)
             </div>
         </div>
         <script src="../../../../prettify.js"></script>

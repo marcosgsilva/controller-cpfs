@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -p ./",
-    "start": "node dist/server",
-    "watch": "tsc-watch --onSuccess",
+    "start": "node dist/infrastructure/server/server",
+    "watch": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/infrastructure/server/server.js\"",
     "dev": "tsc-watch --onSuccess \"npm start\"",
     "test": "jest",
     "test:ci": "npx jest --ci --runInBand --silent --colors --coverage"
